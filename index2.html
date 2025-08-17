@@ -12,6 +12,7 @@
       overflow: hidden; /* Ẩn thanh cuộn */
       background: black;
     }
+
     video {
       position: absolute;
       top: 0;
@@ -19,11 +20,12 @@
       width: 100%;
       height: 100%;
       object-fit: cover; /* Căng đầy khung, cắt phần dư */
+      pointer-events: none; /* Không cho người dùng click hay tương tác */
     }
   </style>
 </head>
 <body>
-  <video controls autoplay muted playsinline>
+  <video autoplay muted playsinline loop>
     <source src="Video/satnhan.mp4" type="video/mp4">
     Trình duyệt không hỗ trợ video.
   </video>
